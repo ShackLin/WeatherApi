@@ -1,0 +1,129 @@
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background-color: #ffd06a;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.search {
+  left: 0;
+}
+
+.search input {
+  top: 2rem;
+  left: 2rem;
+  width: 200px;
+  height: 35px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.searchIcon {
+  color: black;
+  font-size: 30px;
+  top: 2.5rem;
+  left: 2rem;
+}
+
+::placeholder {
+  color: black;
+  font-weight: 700;
+  left: 2rem;
+}
+
+.Section1 {
+  top: 4rem;
+  left: 2rem;
+}
+
+.Item1 {
+  color: black;
+  font-weight: 800;
+  font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 1.5rem 0;
+}
+
+.Section2 {
+  top: 40px;
+  display: flex;
+}
+
+.Section2Part1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  left: 2rem;
+}
+
+.Section2Part2 {
+  left: 15%;
+}
+
+.Item2 {
+  color: black;
+  font-weight: 800;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 1rem 0;
+}
+
+.Item1:hover,
+.Item2:hover {
+  color: coral;
+}
+
+@media screen and (max-width:350px) {
+  .Section2 {
+    flex-direction: column;
+  }
+
+  .Section2 {
+    left: -2rem;
+  }
+
+  .Section1 {
+    left: 0;
+  }
+
+  .Item1 {
+    font-size: 15px;
+  }
+
+  .Section2Part2 {
+    left: 2rem;
+  }
+
+  .search input {
+    left: 0;
+    width: 120px;
+    height: 20px;
+  }
+
+  .searchIcon {
+    left: 0;
+    font-size: 20px;
+  }
+
+  .Item2 {
+    font-size: 15px;
+  }
+
+}
